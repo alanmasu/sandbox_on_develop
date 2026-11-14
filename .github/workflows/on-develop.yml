@@ -1,0 +1,19 @@
+name: On develop
+
+on:
+  push:
+    branches: [develop]
+  pull_request_target:
+    types: [closed]
+    branches: [develop]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: alanmasu/action_on_develop_labeler@main

@@ -12,8 +12,14 @@ permissions:
   issues: write
   pull-requests: read
 
+concurrency:
+  group: on-develop-${{ github.repository }}
+  cancel-in-progress: false
+
 jobs:
   label:
     runs-on: ubuntu-latest
     steps:
       - uses: alanmasu/action_on_develop_labeler@main
+        with:
+          dry-run: true

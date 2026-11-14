@@ -6,6 +6,8 @@ on:
   pull_request_target:
     types: [closed]
     branches: [develop]
+  issues:
+    types: [closed]
 
 permissions:
   contents: read

@@ -19,3 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: alanmasu/action_on_develop_labeler@main
+        with:
+          project-url: https://github.com/users/alanmasu/projects/11
+          project-token: ${{ secrets.PROJECT_TOKEN }}
+          status-on-develop: On develop
+          status-on-revert: In Progress
+          status-on-reopen: In Progress

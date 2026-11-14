@@ -2,10 +2,10 @@ name: On develop
 
 on:
   push:
-    branches: [develop]
+    branches: [develop, main]
   pull_request_target:
     types: [closed]
-    branches: [develop]
+    branches: [develop, main]
   issues:
     types: [closed]
 

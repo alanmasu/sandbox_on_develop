@@ -18,7 +18,7 @@ jobs:
   label:
     runs-on: ubuntu-latest
     steps:
-      - uses: alanmasu/action_on_develop_labeler@main
+      - uses: alanmasu/action_on_develop_labeler@test/github-script-v9
         with:
           project-url: https://github.com/users/alanmasu/projects/11
           project-token: ${{ secrets.PROJECT_TOKEN }}
